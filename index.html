@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Тест оцінки депресивних симптомів (25 пунктів)</title>
+		<style type="text/css" media="screen" id="style" rel="stylesheet"></style>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Тест оцінки депресивних симптомів (25 пунктів)</h1>
+		<p class="lead">
+			Позначте, як часто ви відчували кожен симптом за останній тиждень, включно
+			з сьогоднішнім днем.
+		</p>
+		<form id="testForm">
+			<div id="questionsThoughtsAndFeelingTitle" class="title">
+				Думки та почуття
+			</div>
+			<div id="questionsThoughtsAndFeeling"></div>
+			<div id="questionsActivitiesAndPersonalRelationshipsTitle" class="title">
+				Заняття та соціальні стосунки
+			</div>
+			<div id="questionsActivitiesAndPersonalRelationships"></div>
+			<div id="questionsPhysicalSymptomsTitle" class="title">
+				Фізичні симптоми
+			</div>
+			<div id="questionsPhysicalSymptoms"></div>
+			<div id="questionsSuicidalUrgesTitle" class="title">
+				Суїцидальні думки
+			</div>
+			<div id="questionsSuicidalUrges"></div>
+			<button type="button" onclick="calculate()">Показати результат</button>
+		</form>
+
+		<div id="output" class="result" style="display: none"></div>
+
+		<footer>
+			<p><strong>Інструкція щодо інтерпретації балів:</strong></p>
+			<ul>
+				<li>0–5 — депресії немає</li>
+				<li>6–10 — нормальний, але пригнічений стан</li>
+				<li>11–25 — легка депресія</li>
+				<li>26–50 — помірна депресія</li>
+				<li>51–75 — глибока депресія</li>
+				<li>76–100 — надзвичайно глибока депресія</li>
+			</ul>
+			<p class="warning">
+				Якщо у вас є думки про самогубство або бажання завдати собі шкоди —
+				негайно зверніться до лікаря, служби невідкладної допомоги або
+				психіатра.
+			</p>
+		</footer>
+
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+/* Заголовки */
+h1 {
+	font-size: 1.4rem;
+	margin-bottom: 0.2rem;
+}
+p.lead {
+	margin-top: 0.2rem;
+	color: #333;
+}
+
+/* Блоки запитань */
+.question {
+	border-bottom: 1px solid #eee;
+	padding: 12px 0;
+}
+.qnum {
+	font-weight: 700;
+	margin-right: 8px;
+}
+
+/* Відповіді */
+.options {
+	margin-left: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 12px; /* мінімальний відступ між елементами */
+}
+
+.options label {
+	display: flex;
+	align-items: center;
+	white-space: normal;
+}
+
+/* Кнопка */
+button {
+	margin-top: 18px;
+	padding: 10px 14px;
+	font-size: 1rem;
+}
+
+/* Результат */
+.result {
+	margin-top: 18px;
+	padding: 14px;
+	border-radius: 8px;
+	background: #f3f3f3;
+}
+
+/* Попередження */
+.warning {
+	color: #900;
+	font-weight: 700;
+}
+
+/* Футер */
+footer {
+	margin-top: 28px;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+/* Заголовок */
+.title {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+	body {
+		padding: 16px;
+	}
+
+	.options {
+		flex-direction: column; /* відповіді стають у стовпчик */
+		gap: 6px; /* маленький відступ між варіантами */
+	}
+
+	.options label {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 1.2rem;
+	}
+	.title {
+		font-size: 1.1rem;
+	}
+	body {
+		padding: 12px;
+	}
+}
