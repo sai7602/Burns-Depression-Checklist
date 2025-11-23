@@ -282,7 +282,10 @@ function calculate() {
 			const url = URL.createObjectURL(blob);
 			const a = document.createElement("a");
 			a.href = url;
-			a.download = "depression_test_detailed_report.txt";
+			a.download = `depression_test_detailed_report ${new Date()
+				.toLocaleString()
+				.replace(/:/g, "-")
+				.replace(/,/g, "")}.txt`;
 			document.body.appendChild(a);
 			a.click();
 			a.remove();
